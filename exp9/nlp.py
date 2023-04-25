@@ -1,5 +1,6 @@
 import pandas as pd
 import nltk
+nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 # reading and wragling data
 df_avatar = pd.read_csv('avatar_data.csv', engine='python')
